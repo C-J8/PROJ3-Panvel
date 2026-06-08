@@ -7,6 +7,7 @@ Projeto para organizar a preparacao de bases, EDA, clusterizacao de filiais e pr
 - `docs/pipeline.md`: ordem oficial da pipeline e responsabilidades de cada etapa.
 - `docs/inventario_colegas.md`: resumo do que veio dos colegas, o que foi movido e o que foi removido.
 - `docs/faturamento.md`: regra adotada para faturamento bruto, liquido e devolucoes.
+- `reports/data_quality.md`: checagem de qualidade e consistencia das bases.
 - `notebooks/01_pipeline_atual/`: notebooks oficiais ja ordenados.
 - `notebooks/00_referencias/`: notebooks exploratorios dos colegas e historico de EDA.
 - `reports/eda_bc/`: graficos e notas gerados pelo EDA dos colegas.
