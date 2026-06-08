@@ -2,9 +2,9 @@
 
 Este documento organiza o que foi feito no projeto em uma sequencia reproduzivel. O material util dos colegas foi movido para `notebooks/00_referencias/`, `reports/`, `assets/`, `src/` e `dados_externos/`. A pipeline oficial deve partir dos notebooks ordenados e, depois, migrar a logica para `src/`.
 
-## 00. Referencias e EDA
+## 00. Referencias de EDA
 
-Objetivo: concentrar os achados exploratorios antes de transformar em regra de pipeline.
+Objetivo: manter os materiais individuais de EDA como memoria e fonte de consulta.
 
 Fontes:
 
@@ -25,7 +25,20 @@ Pontos que entram como referencia:
 - ideias de lags e medias moveis;
 - devolucoes como diagnostico separado.
 
-## 01. Preparacao da Base V1
+## 01. EDA Consolidado
+
+Notebook oficial:
+
+- `notebooks/01_eda/01_eda_consolidado.ipynb`
+
+Objetivo:
+
+- juntar os principais achados de EDA do grupo;
+- conferir qualidade e consistencia das bases;
+- documentar decisoes para preparacao, features, clusterizacao e modelagem;
+- evitar que a leitura oficial do projeto dependa de varios notebooks soltos.
+
+## 02. Preparacao da Base V1
 
 Notebook oficial:
 
@@ -55,7 +68,7 @@ Saidas:
 - `Base_V1/vendas_diaria_V1.parquet`
 - `Base_exo/*.parquet`
 
-## 02. Features da Base V2
+## 03. Features da Base V2
 
 Notebook oficial:
 
@@ -79,7 +92,7 @@ Saidas:
 - `Base_V2/features_filiais_agregadas_V2.parquet`
 - `Base_V2/features_filiais_cluster_semana_dia_V2.parquet`
 
-## 03. Clusterizacao de Filiais
+## 04. Clusterizacao de Filiais
 
 Notebook oficial:
 
@@ -102,7 +115,7 @@ Saidas:
 - `Base_V2/cluster_filial_modelagem_V2.parquet`
 - `Base_V2/perfil_clusters_V2.parquet`
 
-## 04. Base de Modelagem
+## 05. Base de Modelagem
 
 Status: proxima etapa.
 
@@ -124,7 +137,7 @@ Saidas planejadas:
 
 - `Base_Modelagem/base_modelagem_diaria.parquet`
 
-## 05. Modelagem
+## 06. Modelagem
 
 Status: proxima etapa.
 

@@ -8,6 +8,7 @@ Projeto para organizar a preparacao de bases, EDA, clusterizacao de filiais e pr
 - `docs/inventario_colegas.md`: resumo do que veio dos colegas, o que foi movido e o que foi removido.
 - `docs/faturamento.md`: regra adotada para faturamento bruto, liquido e devolucoes.
 - `reports/data_quality.md`: checagem de qualidade e consistencia das bases.
+- `notebooks/01_eda/`: EDA consolidado oficial do grupo.
 - `notebooks/01_pipeline_atual/`: notebooks oficiais ja ordenados.
 - `notebooks/00_referencias/`: notebooks exploratorios dos colegas e historico de EDA.
 - `reports/eda_bc/`: graficos e notas gerados pelo EDA dos colegas.
@@ -23,8 +24,9 @@ Projeto para organizar a preparacao de bases, EDA, clusterizacao de filiais e pr
 
 ## Ordem resumida
 
-1. Preparar `Base_V1`.
-2. Gerar features da `Base_V2`.
-3. Clusterizar filiais.
-4. Construir base de modelagem.
-5. Treinar e avaliar modelos de previsao.
+1. Revisar o EDA consolidado.
+2. Preparar `Base_V1`.
+3. Gerar features da `Base_V2`.
+4. Clusterizar filiais.
+5. Construir base de modelagem.
+6. Treinar e avaliar modelos de previsao.
