@@ -9,7 +9,9 @@ Projeto para organizar a preparacao de bases, EDA, clusterizacao de filiais e pr
 - `docs/faturamento.md`: regra adotada para faturamento bruto, liquido e devolucoes.
 - `reports/data_quality.md`: checagem de qualidade e consistencia das bases.
 - `notebooks/01_eda/`: EDA consolidado oficial do grupo.
-- `notebooks/01_pipeline_atual/`: notebooks oficiais ja ordenados.
+- `notebooks/02_preparacao/`: preparacao oficial da `Base_V1` e `Base_exo`.
+- `notebooks/03_features/`: construcao oficial da `Base_V2`.
+- `notebooks/04_clusterizacao/`: clusterizacao oficial das filiais.
 - `notebooks/00_referencias/`: notebooks exploratorios dos colegas e historico de EDA.
 - `reports/eda_bc/`: graficos e notas gerados pelo EDA dos colegas.
 - `dados_externos/`: bases externas ainda nao integradas na modelagem.

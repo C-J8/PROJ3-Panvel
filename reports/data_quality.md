@@ -6,7 +6,9 @@ Data da checagem: 2026-06-08.
 
 Os materiais de EDA/features preservados no projeto estao organizados em:
 
-- `notebooks/01_pipeline_atual/`: pipeline oficial atual, com preparacao, features V2 e clusterizacao.
+- `notebooks/02_preparacao/`: preparacao oficial da `Base_V1` e `Base_exo`.
+- `notebooks/03_features/`: construcao oficial da `Base_V2`.
+- `notebooks/04_clusterizacao/`: clusterizacao oficial das filiais.
 - `notebooks/00_referencias/colegas/arthur/`: EDA do Arthur.
 - `notebooks/00_referencias/colegas/gustavo/`: EDA e feature engineering do Gustavo.
 - `notebooks/00_referencias/colegas/celso/`: EDA historico do Celso.

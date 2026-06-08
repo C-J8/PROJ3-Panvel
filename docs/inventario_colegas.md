@@ -49,9 +49,9 @@ Uso recomendado:
 Arquivos:
 
 - `notebooks/00_referencias/colegas/celso/eda_cj_demo.ipynb`
-- `notebooks/01_pipeline_atual/01_preparacao_base_v1.ipynb`
-- `notebooks/01_pipeline_atual/02_features_base_v2.ipynb`
-- `notebooks/01_pipeline_atual/03_clusterizacao_filiais.ipynb`
+- `notebooks/02_preparacao/01_preparacao_base_v1.ipynb`
+- `notebooks/03_features/01_features_base_v2.ipynb`
+- `notebooks/04_clusterizacao/01_clusterizacao_filiais.ipynb`
 
 Contribuicoes:
 
@@ -63,7 +63,7 @@ Contribuicoes:
 
 Observacao:
 
-- os tres notebooks principais do `eda_cj` eram iguais aos notebooks oficiais movidos para `notebooks/01_pipeline_atual/`.
+- os tres notebooks principais do `eda_cj` eram iguais aos notebooks oficiais movidos para as pastas `notebooks/02_preparacao/`, `notebooks/03_features/` e `notebooks/04_clusterizacao/`.
 - os Parquets dentro do repo dos colegas eram versoes anteriores/regravadas; os arquivos atuais em `Base_V2/` devem ser tratados como referencia mais nova.
 
 ### BC / DuckDB

@@ -42,7 +42,7 @@ Objetivo:
 
 Notebook oficial:
 
-- `notebooks/01_pipeline_atual/01_preparacao_base_v1.ipynb`
+- `notebooks/02_preparacao/01_preparacao_base_v1.ipynb`
 
 Entradas:
 
@@ -72,7 +72,7 @@ Saidas:
 
 Notebook oficial:
 
-- `notebooks/01_pipeline_atual/02_features_base_v2.ipynb`
+- `notebooks/03_features/01_features_base_v2.ipynb`
 
 Entradas:
 
@@ -96,7 +96,7 @@ Saidas:
 
 Notebook oficial:
 
-- `notebooks/01_pipeline_atual/03_clusterizacao_filiais.ipynb`
+- `notebooks/04_clusterizacao/01_clusterizacao_filiais.ipynb`
 
 Entradas:
 
