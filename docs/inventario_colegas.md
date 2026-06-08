@@ -1,6 +1,6 @@
 # Inventario do Material dos Colegas
 
-Material analisado em `Colegas/repositorio_colegas/metas_panvel-main/`.
+Material originalmente recebido em `Colegas/repositorio_colegas/metas_panvel-main/` e reorganizado nas pastas oficiais do projeto.
 
 ## O que fica como referencia
 
@@ -8,7 +8,7 @@ Material analisado em `Colegas/repositorio_colegas/metas_panvel-main/`.
 
 Arquivo:
 
-- `notebooks/eda_aa/eda_arthur_demo.ipynb`
+- `notebooks/00_referencias/colegas/arthur/eda_arthur_demo.ipynb`
 
 Contribuicoes:
 
@@ -28,8 +28,9 @@ Uso recomendado:
 
 Arquivos:
 
-- `notebooks/eda_gl/eda_gustavo_demo.ipynb`
-- `notebooks/eda_gl/feature_engineering_demo.ipynb`
+- `notebooks/00_referencias/colegas/gustavo/eda_gustavo_demo.ipynb`
+- `notebooks/00_referencias/colegas/gustavo/feature_engineering_demo.ipynb`
+- `notebooks/00_referencias/colegas/gustavo/eda_gustavo.md`
 
 Contribuicoes:
 
@@ -47,10 +48,10 @@ Uso recomendado:
 
 Arquivos:
 
-- `notebooks/eda_cj/eda_cj_demo.ipynb`
-- `notebooks/eda_cj/Preparacao_bases_demo.ipynb`
-- `notebooks/eda_cj/Bases_cluster_demo.ipynb`
-- `notebooks/eda_cj/Clusterizacao_demo.ipynb`
+- `notebooks/00_referencias/colegas/celso/eda_cj_demo.ipynb`
+- `notebooks/01_pipeline_atual/01_preparacao_base_v1.ipynb`
+- `notebooks/01_pipeline_atual/02_features_base_v2.ipynb`
+- `notebooks/01_pipeline_atual/03_clusterizacao_filiais.ipynb`
 
 Contribuicoes:
 
@@ -62,14 +63,15 @@ Contribuicoes:
 
 Observacao:
 
-- os tres notebooks principais do `eda_cj` sao iguais aos notebooks oficiais movidos para `notebooks/01_pipeline_atual/`.
-- os Parquets dentro do repo dos colegas parecem versoes anteriores/regravadas; os arquivos atuais em `Base_V2/` devem ser tratados como referencia mais nova.
+- os tres notebooks principais do `eda_cj` eram iguais aos notebooks oficiais movidos para `notebooks/01_pipeline_atual/`.
+- os Parquets dentro do repo dos colegas eram versoes anteriores/regravadas; os arquivos atuais em `Base_V2/` devem ser tratados como referencia mais nova.
 
 ### BC / DuckDB
 
 Pasta:
 
-- `notebooks/eda_bc/`
+- `notebooks/00_referencias/colegas/bc/`
+- `reports/eda_bc/`
 
 Contribuicoes:
 
@@ -86,14 +88,22 @@ Decisao atual:
 
 ## Dados duplicados
 
-Os Parquets em `Colegas/dados_panvel_duplicados/` foram comparados com `Base_Origi/` e sao iguais. Eles ficam preservados, mas a pipeline deve ler `Base_Origi/`.
+Os Parquets que estavam em `Colegas/dados_panvel_duplicados/` foram comparados com `Base_Origi/` e eram iguais. Eles foram removidos da arvore atual; a pipeline deve ler `Base_Origi/`.
 
 ## Dados externos
 
-- `Colegas/dados_externos/municipios/`: shapefile de municipios.
-- `Colegas/dados_externos/cnes/`: bases CNES 2024 e 2025.
+- `dados_externos/municipios/`: shapefile de municipios.
+- `dados_externos/cnes/`: bases CNES 2024 e 2025.
 
 Uso recomendado:
 
 - nao entram na primeira versao da modelagem.
 - podem ser avaliados depois como enriquecimento externo.
+
+## Removido da arvore atual
+
+- `Colegas/dados_panvel_duplicados/`: duplicata da `Base_Origi/`.
+- `Colegas/dados_panvel_duplicados/arquivos_invalidos/project-puc_vendas (1).parquet`: arquivo vazio.
+- `Colegas/zips_originais/metas_panvel-main.zip`: ZIP original ja extraido e reorganizado.
+- SQLs do `eda_bc`: mantida apenas a documentacao/relatorios e scripts uteis; as queries nao entram na pipeline oficial.
+- Parquets antigos dentro do `eda_cj`: substituidos pelos checkpoints atuais em `Base_V2/` e `Base_exo/`.

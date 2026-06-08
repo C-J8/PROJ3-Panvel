@@ -6,6 +6,8 @@ Origem principal atual:
 
 - `Base_Origi/`
 
-Referencia util:
+Arquivos auxiliares:
 
-- `Colegas/repositorio_colegas/metas_panvel-main/src/dataloader.py`
+- `panvel_loader.py`: loader original reorganizado do repo dos colegas.
+- `download_panvel_s3.py`: script simples de download via loader.
+- `external/`: scripts de geracao de seeds externas.

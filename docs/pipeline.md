@@ -1,6 +1,6 @@
 # Pipeline Oficial
 
-Este documento organiza o que foi feito no projeto em uma sequencia reproduzivel. A pasta `Colegas/` continua como memoria bruta do trabalho dos colegas; a pipeline oficial deve partir dos notebooks e, depois, migrar a logica para `src/`.
+Este documento organiza o que foi feito no projeto em uma sequencia reproduzivel. O material util dos colegas foi movido para `notebooks/00_referencias/`, `reports/`, `assets/`, `src/` e `dados_externos/`. A pipeline oficial deve partir dos notebooks ordenados e, depois, migrar a logica para `src/`.
 
 ## 00. Referencias e EDA
 
@@ -8,11 +8,12 @@ Objetivo: concentrar os achados exploratorios antes de transformar em regra de p
 
 Fontes:
 
-- `Colegas/repositorio_colegas/metas_panvel-main/notebooks/eda_aa/eda_arthur_demo.ipynb`
-- `Colegas/repositorio_colegas/metas_panvel-main/notebooks/eda_gl/eda_gustavo_demo.ipynb`
-- `Colegas/repositorio_colegas/metas_panvel-main/notebooks/eda_gl/feature_engineering_demo.ipynb`
-- `Colegas/repositorio_colegas/metas_panvel-main/notebooks/eda_cj/eda_cj_demo.ipynb`
-- `Colegas/repositorio_colegas/metas_panvel-main/notebooks/eda_bc/`
+- `notebooks/00_referencias/colegas/arthur/eda_arthur_demo.ipynb`
+- `notebooks/00_referencias/colegas/gustavo/eda_gustavo_demo.ipynb`
+- `notebooks/00_referencias/colegas/gustavo/feature_engineering_demo.ipynb`
+- `notebooks/00_referencias/colegas/celso/eda_cj_demo.ipynb`
+- `notebooks/00_referencias/colegas/bc/`
+- `reports/eda_bc/`
 
 Pontos que entram como referencia:
 
@@ -109,7 +110,7 @@ Entrada sugerida:
 
 - `Base_V2/features_filiais_diarias_V2.parquet`
 - `Base_V2/cluster_filial_modelagem_V2.parquet`
-- ideias de `Colegas/repositorio_colegas/metas_panvel-main/notebooks/eda_gl/feature_engineering_demo.ipynb`
+- ideias de `notebooks/00_referencias/colegas/gustavo/feature_engineering_demo.ipynb`
 
 Responsabilidades:
 

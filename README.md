@@ -5,10 +5,12 @@ Projeto para organizar a preparacao de bases, EDA, clusterizacao de filiais e pr
 ## Como navegar
 
 - `docs/pipeline.md`: ordem oficial da pipeline e responsabilidades de cada etapa.
-- `docs/inventario_colegas.md`: resumo do que veio dos colegas e como aproveitar.
+- `docs/inventario_colegas.md`: resumo do que veio dos colegas, o que foi movido e o que foi removido.
 - `docs/faturamento.md`: regra adotada para faturamento bruto, liquido e devolucoes.
 - `notebooks/01_pipeline_atual/`: notebooks oficiais ja ordenados.
-- `Colegas/`: material recebido dos colegas, preservado como referencia.
+- `notebooks/00_referencias/`: notebooks exploratorios dos colegas e historico de EDA.
+- `reports/eda_bc/`: graficos e notas gerados pelo EDA dos colegas.
+- `dados_externos/`: bases externas ainda nao integradas na modelagem.
 
 ## Bases
 
@@ -16,6 +18,7 @@ Projeto para organizar a preparacao de bases, EDA, clusterizacao de filiais e pr
 - `Base_V1/`: bases preparadas e escopo principal separado da `Base_exo`.
 - `Base_V2/`: features para clusterizacao e analise diaria.
 - `Base_exo/`: filiais jovens ou fora do escopo principal atual.
+- `dados_externos/`: CNES e municipios, preservados para avaliacao futura.
 
 ## Ordem resumida
 
