@@ -8,6 +8,7 @@ Objetivo:
 
 - ler `Base_V1/`;
 - gerar features diarias e agregadas por filial;
+- consolidar features uteis dos colegas, como dia util, lags e medias moveis;
 - criar padroes por semana do mes e dia da semana;
 - salvar as bases oficiais em `Base_V2/`.
 

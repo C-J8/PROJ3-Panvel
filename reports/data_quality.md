@@ -1,6 +1,6 @@
 # Data Quality Check
 
-Data da checagem: 2026-06-08.
+Data da checagem: 2026-06-09.
 
 ## Cobertura de materiais
 
@@ -35,9 +35,9 @@ O SQL do BC foi removido da arvore atual por decisao de pipeline: as ideias fica
 | `Base_exo/vendas_exo.parquet` | 1.191.251 | 7 | 24 |
 | `Base_exo/metas_exo.parquet` | 7.560 | 6 | 24 |
 | `Base_exo/vendas_diaria_exo.parquet` | 7.301 | 8 | 24 |
-| `Base_V2/features_filiais_diarias_V2.parquet` | 73.082 | 80 | 100 |
-| `Base_V2/features_filiais_agregadas_V2.parquet` | 100 | 43 | 100 |
-| `Base_V2/features_filiais_cluster_semana_dia_V2.parquet` | 100 | 90 | 100 |
+| `Base_V2/features_filiais_diarias_V2.parquet` | 73.082 | 110 | 100 |
+| `Base_V2/features_filiais_agregadas_V2.parquet` | 100 | 49 | 100 |
+| `Base_V2/features_filiais_cluster_semana_dia_V2.parquet` | 100 | 196 | 100 |
 | `Base_V2/cluster_filial_modelagem_V2.parquet` | 100 | 10 | 100 |
 | `Base_V2/perfil_clusters_V2.parquet` | 4 | 18 | - |
 

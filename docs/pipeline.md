@@ -82,6 +82,7 @@ Responsabilidades:
 
 - criar features diarias por filial;
 - criar features agregadas por filial;
+- consolidar features uteis dos colegas, como flags de dia util, lags, medias moveis e cadastro expandido;
 - calcular padroes por semana do mes e dia da semana;
 - gerar ratios de calendario;
 - preparar matrizes de clusterizacao.
@@ -123,13 +124,12 @@ Entrada sugerida:
 
 - `Base_V2/features_filiais_diarias_V2.parquet`
 - `Base_V2/cluster_filial_modelagem_V2.parquet`
-- ideias de `notebooks/00_referencias/colegas/gustavo/feature_engineering_demo.ipynb`
+- `docs/features_consolidacao.md`
 
 Responsabilidades:
 
 - definir alvo principal como faturamento bruto;
-- criar lags e medias moveis;
-- adicionar features calendario permitidas;
+- selecionar lags, medias moveis e features calendario ja criadas na V2;
 - remover variaveis com vazamento de informacao;
 - separar treino, validacao e teste por tempo.
 
