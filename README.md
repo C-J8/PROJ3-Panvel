@@ -8,6 +8,7 @@ Projeto para organizar a preparacao de bases, EDA, clusterizacao de filiais e pr
 - `docs/inventario_colegas.md`: resumo do que veio dos colegas, o que foi movido e o que foi removido.
 - `docs/faturamento.md`: regra adotada para faturamento bruto, liquido e devolucoes.
 - `docs/features_consolidacao.md`: matriz do que entrou na V2 a partir dos materiais do grupo.
+- `docs/features_escolhidas.md`: lista das features escolhidas e notebooks responsaveis.
 - `reports/data_quality.md`: checagem de qualidade e consistencia das bases.
 - `notebooks/01_eda/`: EDA consolidado oficial do grupo.
 - `notebooks/02_preparacao/`: preparacao oficial da `Base_V1` e `Base_exo`.
