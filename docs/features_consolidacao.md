@@ -12,7 +12,6 @@ Arquivos regenerados:
 |---|---:|---:|---|
 | `Base_V2/features_filiais_diarias_V2.parquet` | 73.082 | 110 | Base diaria principal para modelagem. |
 | `Base_V2/features_filiais_agregadas_V2.parquet` | 100 | 49 | Perfil consolidado por filial. |
-| `Base_V2/features_filiais_cluster_semana_dia_V2.parquet` | 100 | 196 | Matriz tratada para clusterizacao. |
 
 ## O Que Entrou
 
@@ -22,11 +21,11 @@ Arquivos regenerados:
 | BC | Quinto dia util do mes | incorporado | `eh_quinto_dia_util_mes` |
 | BC | Feriados bancarios | incorporado | `eh_feriado_bancario`, `eh_dia_util`, `ordem_dia_util_mes`, `dias_uteis_no_mes` |
 | BC | Ticket medio por filial | ja existia | `ticket_medio_bruto_dia_medio` e derivados |
-| Gustavo | Fim de semana, mes, trimestre e fim de mes | ja existia ou expandido | calendario diario da V2 |
+| Gustavo | Fim de semana, mes, trimestre e fim de mes | ja existia ou expandido | calendario diario da V2, com `dia_semana_id` e `fim_semana_id` herdando o padrao da `Base_V1` |
 | Gustavo | Lags de vendas | incorporado | `faturamento_bruto_lag_1d`, `7d`, `14d`, `28d` |
 | Gustavo | Medias moveis | incorporado | `faturamento_bruto_media_movel_7d`, `28d` e variaveis auxiliares |
 | Gustavo | Lags por categoria | incorporado em versao agregada | `faturamento_med_lag_7d`, `faturamento_n_med_lag_7d` |
-| Celso | MED/N-MED, shares e perfil temporal | mantido | features diarias, agregadas e matriz de cluster |
+| Celso | MED/N-MED, shares e perfil temporal | mantido | features diarias e agregadas |
 | Celso/colegas | Cadastro de filiais | expandido | `localidade`, `uf`, `estacionamento`, `atendimento_24_horas`, `idade_filial_meses`, `idade_filial` |
 
 ## O Que Ficou Fora Por Enquanto

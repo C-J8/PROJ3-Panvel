@@ -12,4 +12,4 @@ Esta pasta aponta para os materiais exploratorios que alimentam a pipeline ofici
 
 ## Decisao
 
-Os arquivos acima ficam como referencia historica. A sequencia oficial executavel esta em `../01_eda/`, `../02_preparacao/`, `../03_features/` e `../04_clusterizacao/`.
+Os arquivos acima ficam como referencia historica. A sequencia oficial executavel esta em `../01_eda/`, `../02_preparacao/`, `../03_features/` e `../05_modelagem/`.

@@ -35,7 +35,7 @@ Objetivo:
 
 - juntar os principais achados de EDA do grupo;
 - conferir qualidade e consistencia das bases;
-- documentar decisoes para preparacao, features, clusterizacao e modelagem;
+- documentar decisoes para preparacao, features e modelagem;
 - evitar que a leitura oficial do projeto dependa de varios notebooks soltos.
 
 ## 02. Preparacao da Base V1
@@ -84,46 +84,25 @@ Responsabilidades:
 - criar features agregadas por filial;
 - consolidar features uteis dos colegas, como flags de dia util, lags, medias moveis e cadastro expandido;
 - calcular padroes por semana do mes e dia da semana;
-- gerar ratios de calendario;
-- preparar matrizes de clusterizacao.
+- gerar ratios de calendario para diagnostico e features auxiliares;
+- salvar as bases de features usadas pela modelagem.
 
 Saidas:
 
 - `Base_V2/features_filiais_diarias_V2.parquet`
 - `Base_V2/features_filiais_agregadas_V2.parquet`
-- `Base_V2/features_filiais_cluster_semana_dia_V2.parquet`
 
-## 04. Clusterizacao de Filiais
+## 04. Base de Modelagem
 
-Notebook oficial:
+Status: primeira versao implementada.
 
-- `notebooks/04_clusterizacao/01_clusterizacao_filiais.ipynb`
+Pasta:
 
-Entradas:
+- `notebooks/05_modelagem/`
 
-- `Base_V2/features_filiais_cluster_semana_dia_V2.parquet`
-- `Base_V2/features_filiais_diarias_V2.parquet`
-
-Responsabilidades:
-
-- testar configuracoes de clusterizacao;
-- escolher uma referencia interpretavel;
-- gerar perfil dos clusters;
-- validar os clusters na base diaria.
-
-Saidas:
-
-- `Base_V2/cluster_filial_modelagem_V2.parquet`
-- `Base_V2/perfil_clusters_V2.parquet`
-
-## 05. Base de Modelagem
-
-Status: proxima etapa.
-
-Entrada sugerida:
+Entrada:
 
 - `Base_V2/features_filiais_diarias_V2.parquet`
-- `Base_V2/cluster_filial_modelagem_V2.parquet`
 - `docs/features_consolidacao.md`
 
 Responsabilidades:
@@ -133,20 +112,27 @@ Responsabilidades:
 - remover variaveis com vazamento de informacao;
 - separar treino, validacao e teste por tempo.
 
-Saidas planejadas:
+Saidas:
 
 - `Base_Modelagem/base_modelagem_diaria.parquet`
+- `Base_Modelagem/features_modelagem.json`
 
-## 06. Modelagem
+## 05. Modelagem
 
-Status: proxima etapa.
+Status: primeira versao implementada com CatBoost e LightGBM.
 
 Responsabilidades:
 
 - baseline simples;
-- modelos por categoria `MED` e `N-MED`;
-- teste com cluster como feature ou segmentacao;
+- modelos globais por filial-dia;
+- CatBoost e LightGBM;
 - avaliacao temporal por filial, categoria e mes.
+
+Saidas:
+
+- `Base_Modelagem/predicoes_catboost_lightgbm.parquet`
+- `Base_Modelagem/metricas_catboost_lightgbm.parquet`
+- `Base_Modelagem/importancias_catboost_lightgbm.parquet`
 
 ## Regra de Execucao
 

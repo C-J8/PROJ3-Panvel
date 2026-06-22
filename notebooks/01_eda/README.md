@@ -1,12 +1,14 @@
 # EDA - Projeto Panvel
 
-Este diretorio contem a entrega consolidada de Analise Exploratoria de Dados (EDA) do projeto Panvel. O material foi organizado para funcionar como uma etapa independente da pipeline, podendo ser revisado diretamente no repositorio do projeto ou incorporado a uma entrega compartilhada do grupo.
+Este diretorio contem a entrega consolidada da Analise Exploratoria de Dados (EDA) do projeto Panvel. O objetivo e reunir, em uma unica leitura, os principais achados sobre vendas, metas, devolucoes e cadastro de filiais, criando uma base clara para a etapa seguinte de features.
+
+O material foi organizado para ser revisado de forma independente, inclusive em uma entrega compartilhada do grupo. Por isso, este README evita depender de contexto externo ao projeto e descreve o escopo, as entradas, as decisoes e a relacao da EDA com as proximas etapas.
 
 ## Arquivo Principal
 
 - `01_eda_consolidado.ipynb`
 
-O notebook consolida os principais achados exploratorios sobre vendas, metas, devolucoes, cadastro de filiais e cobertura temporal das bases.
+Esse notebook consolida os achados exploratorios e registra as decisoes que orientam a preparacao da base e a criacao de features.
 
 ## Como Executar
 
@@ -15,24 +17,23 @@ Execute o Jupyter a partir da raiz do projeto, mantendo a estrutura de pastas ab
 ```text
 Base_Origi/
 Base_V1/
-Base_V2/
 Base_exo/
 docs/
 notebooks/
 reports/
 ```
 
-O notebook usa caminhos relativos ao diretorio raiz. Caso ele seja movido para outro repositorio, mantenha a mesma estrutura ou ajuste as variaveis de caminho nas primeiras celulas.
+O notebook usa caminhos relativos ao diretorio raiz. Se ele for movido para outro repositorio, mantenha a mesma estrutura de pastas ou ajuste as variaveis de caminho nas primeiras celulas.
 
 ## Objetivos da EDA
 
 A analise foi estruturada para responder:
 
 1. Qual e a cobertura das bases em linhas, datas, filiais e colunas?
-2. Existem divergencias entre cadastro de filiais e bases transacionais?
+2. Existem divergencias entre o cadastro de filiais e as bases transacionais?
 3. Quais filiais devem seguir para a base principal de modelagem?
 4. Como tratar faturamento bruto, faturamento liquido e devolucoes?
-5. Quais problemas precisam ser resolvidos antes da preparacao, features, clusterizacao e modelagem?
+5. Quais problemas precisam ser resolvidos antes da preparacao da base e da criacao de features?
 
 ## Bases Avaliadas
 
@@ -47,19 +48,18 @@ Entradas principais:
 Bases derivadas consideradas na validacao:
 
 - `Base_V1/`
-- `Base_V2/`
 - `Base_exo/`
 
-## Principais Entregaveis
+## Entregaveis da EDA
 
-A EDA gera uma leitura consolidada sobre:
+A EDA entrega uma leitura consolidada sobre:
 
 - consistencia de filiais entre cadastro, vendas, metas e devolucoes;
 - cobertura temporal das bases;
-- qualidade de metas, incluindo metas zeradas e negativas;
+- qualidade das metas, incluindo casos zerados e negativos;
 - diferencas entre faturamento bruto, devolucoes e faturamento liquido;
-- separacao entre base principal (`Base_V1`) e filiais fora do escopo atual (`Base_exo`);
-- pontos de atencao para a criacao de features e modelagem.
+- separacao entre a base principal (`Base_V1`) e as filiais fora do escopo atual (`Base_exo`);
+- pontos de atencao para a etapa de features.
 
 ## Decisoes Registradas
 
@@ -70,15 +70,27 @@ A EDA gera uma leitura consolidada sobre:
 - A `Base_exo` preserva 24 filiais jovens ou fora do escopo principal.
 - Metas zeradas e datas ausentes devem ser tratadas antes da modelagem.
 
-## Relacao Com a Pipeline
+## Handoff Para Features
 
-Esta EDA e a primeira etapa analitica da pipeline oficial. A sequencia recomendada apos sua revisao e:
+A EDA fecha a etapa de entendimento e qualidade dos dados. A partir dela, a etapa de features deve usar:
+
+- `Base_V1/` como fonte tratada principal;
+- faturamento bruto como alvo inicial;
+- devolucoes e faturamento liquido apenas como diagnostico ou variaveis auxiliares;
+- `Base_exo/` fora do escopo principal, preservada para analises futuras;
+- os pontos de qualidade registrados em `reports/data_quality.md` como checklist antes da modelagem.
+
+O notebook responsavel pelas features oficiais e:
+
+- `notebooks/03_features/01_features_base_v2.ipynb`
+
+## Sequencia Recomendada
+
+Depois de revisar a EDA, siga a ordem:
 
 1. preparar a `Base_V1`;
-2. gerar a `Base_V2` com features consolidadas;
-3. executar a clusterizacao de filiais;
-4. construir a base final de modelagem;
-5. treinar e avaliar modelos de previsao.
+2. gerar a base de features consolidada;
+3. revisar a base de features antes de avancar para as etapas seguintes.
 
 ## Documentacao Complementar
 
@@ -86,5 +98,4 @@ Quando disponiveis no repositorio, os documentos abaixo complementam a EDA:
 
 - `reports/data_quality.md`: checagem detalhada de qualidade das bases.
 - `docs/faturamento.md`: decisao sobre faturamento bruto, liquido e devolucoes.
-- `docs/features_consolidacao.md`: consolidacao das features incorporadas na `Base_V2`.
 - `docs/pipeline.md`: ordem oficial das etapas do projeto.
